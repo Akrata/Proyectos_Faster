@@ -21,7 +21,7 @@
     font-style: normal;
     line-height: 56px;
     letter-spacing: 1%;
-    color: var(--font);
+    
 }
 
 .headline2{
@@ -30,7 +30,7 @@
     font-style: normal;
     line-height: 58px;
     letter-spacing: 0.5%;
-    color: var(--font);
+    
 }
 
 .headline3{
@@ -38,7 +38,7 @@
     font-weight: 700;
     font-style: normal;
     line-height: 31.5px;
-    color: var(--font);
+    
 }
 
 .headline4{
@@ -47,7 +47,7 @@
     font-style: normal;
     line-height: 34px;
     letter-spacing: 1%;
-    color: var(--font);
+    
 }
 
 .headline5{
@@ -56,7 +56,7 @@
     font-style: normal;
     line-height: 30px;
     letter-spacing: 1%;
-    color: var(--font);
+    
 }
 
 .body1-bold{
@@ -64,7 +64,7 @@
     font-weight: 700;
     font-style: normal;
     line-height: 27px;
-    color: var(--font);
+    
 }
 
 .body1-regular{
@@ -72,7 +72,7 @@
     font-weight: 400;
     font-style: normal;
     line-height: 27px;
-    color: var(--font);
+    
 }
 
 .body2-bold{
@@ -80,15 +80,16 @@
     font-weight: 700;
     font-style: normal;
     line-height: 19px;
-    color: var(--font);
+    
 }
 
-.body2-bold{
+.body2-regular{
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
     line-height: 22px;
-    color: var(--font);
+    
+    
 }
 
 .btn-font{
@@ -97,7 +98,7 @@
     font-style: normal;
     line-height: 22px;
     text-align: center;
-    color: var(--font);
+    
 }
 
 .caption{
@@ -106,9 +107,15 @@
     font-style: normal;
     line-height: 22px;
     text-align: center;
-    color: var(--font);
+    
 }
 
+body{
+    background: url(../static/img/background.png) no-repeat;
+    background-color: #E8E8E6;
+    overflow-x: none;
+    color: var(--white);
+}
 /*HEADER*/
 header{
     min-height: 76px;
@@ -126,20 +133,23 @@ header{
     line-height:28px;
 }
 .header-menu{
+    
     color: var(--white);
     background-color: var(--black);
-    display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 8%;
+    top: 10%;
     right: 0%;
     height: 200px;
     width: 200px;
     transition: .5s;
     transform: translateX(300px);
+    display: none;
     
 }
+
+/*HEADER-TOGGLE*/
 .header-toggle{
     display: flex;
     flex-direction: column;
@@ -168,6 +178,7 @@ header{
 }
 .checkbox:checked~.header-menu{
     transform: translateX(0px);
+    display: flex;
 
 }
 
@@ -188,9 +199,115 @@ header{
     position: absolute;
 }
 
+/*PRESENTATION*/
+
+.presentation{
+    margin: 35px 20px 57px 20px;
+    display: grid;
+    grid-row-gap: 24px;
+}
+.presentation-top{
+    display: grid;
+    grid-row-gap: 24px;
+}
+.presentation-mid{
+    height: 52px;
+    width: 260px;
+    border-radius: 8px;
+    border: solid 2px var(--white);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.presentation-bot{
+    color: white;
+}
 
 
+.iphone-img{
+    /* border: solid 1px red; */
+    width: 360px;
+}
+.business{
+    margin: 27px 107px 0px 107px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
 
+/*----PROMOTION1----*/
+.promotion1{
+    margin-bottom: 64px;
+}
+.promotion1-img{
+    width: 360px;
+    margin: 64px 0px;
+}
+.promotion-text{
+display: flex;
+flex-direction: column;
+gap:16px;
+padding: 0px 20px;
+margin-bottom: 64px;
+}
+.promotion-text-top{
+color: var(--black);
+text-align: left;
+}
+.promotion-text-bot{
+    color: var(--grey);
+}
+.iphone1-img{
+    width: 360px;
+}
 
+/*-------PROMOTION2-------*/
+.promotion2{
+    background: url(../static/img/image\ 7.png) no-repeat;
+    background-size: cover;
+    background-position: 83% ;
+    padding-bottom: 138px;
+}
+.iphone2-img{
+    width: 360px;
+}
+/*----PROMOTION3----*/
+.promotion3{
+    background:black;
+    padding: 64px 0px;
+}
+.promotion3-text{
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+.bar{
+    height: 40px;
+    width: 95%;
+    position: relative;
+    right: -5%;
+    background:white;
+    border-radius:  100px 0px 0px 100px;
+    margin-bottom: 64px;
+}
+.bar span{
+    height: 40px;
+    width: 60%;
+    background: #2FB464;
+    position: absolute;
+    border-radius: 100px;
+
+}
+
+.promotion-text{
+    display: flex;
+    flex-direction: column;
+
+}
 
 
