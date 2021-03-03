@@ -113,7 +113,41 @@
 header{
     min-height: 76px;
     background-color: var(--black);
+    color: var(--white);
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+.header-logo{
+    font-size: 24px;
+    font-weight:bold;
+    line-height:28px;
+}
+.header-menu{
+    color: var(--black);
+    background-color: var(--white);
+    display: none;
+}
+.header-toggle input{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+}
+
+.header-toggle span{
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin-bottom: 5px;
+  position: relative;
+  background: var(--white);  
+  border-radius: 3px;
+  z-index: 1;
+}
+
+
 
 
 
