@@ -118,6 +118,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 .header-logo{
     font-size: 24px;
@@ -125,27 +126,68 @@ header{
     line-height:28px;
 }
 .header-menu{
-    color: var(--black);
-    background-color: var(--white);
-    display: none;
+    color: var(--white);
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 8%;
+    right: 0%;
+    height: 200px;
+    width: 200px;
+    transition: .5s;
+    transform: translateX(300px);
+    
+}
+.header-toggle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 .header-toggle input{
     position: absolute;
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     opacity: 0;
+    padding: 10px 0px;
+    
 }
 
-.header-toggle span{
-  display: block;
-  width: 24px;
-  height: 2px;
-  margin-bottom: 5px;
-  position: relative;
-  background: var(--white);  
-  border-radius: 3px;
-  z-index: 1;
+.bar1,.bar2,.bar3{
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: white;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    border-radius: 3px;
+    transition: .5s;  
 }
+.checkbox:checked~.header-menu{
+    transform: translateX(0px);
+
+}
+
+.checkbox:checked ~ .bar1{
+    transform: translateY(3px) rotate(45deg);
+    
+}
+.checkbox:checked ~ .bar2{
+    display: none;
+}
+.checkbox:checked ~ .bar3{
+    transform: translateY(-3px) rotate(-45deg);
+}
+.hmb-btn{
+    width: 30px;
+    height: 30px;
+    /* border: solid 1px red ; */
+    position: absolute;
+}
+
 
 
 
