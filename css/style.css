@@ -353,7 +353,7 @@ color: var(--grey);
     flex-direction:column;
     align-items: center;
     color: var(--black);
-    padding: 138px 32px 32px 32px;
+    padding: 100px 32px 32px 32px;
     position: relative;
     gap: 10px;
 
@@ -365,8 +365,9 @@ color: var(--grey);
     top: -10%;
 }
 .card-text-top{
-    height: 211px;
+    min-height: 211px;
     text-align: center;
+    
 }
 .card-text-bot{
     text-align: center;
