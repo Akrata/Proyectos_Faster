@@ -205,6 +205,9 @@ header{
     /* border: solid 1px red ; */
     position: absolute;
 }
+.header-menu-large{
+    display: none;
+}
 
 /*PRESENTATION*/
 
@@ -469,12 +472,7 @@ footer{
     padding-top: 24px;
     gap: 16px;
 }
-.footer-mid{
-   /* margin: 64px 0px; */
-}
-.footer-bot{
-    
-}
+
 .first-list,
 .second-list{
     list-style: none;
@@ -511,78 +509,135 @@ footer{
 }
 
 @media screen and (min-width: 1024px) {
+    .headline5{
+        font-size: 48px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 58px;
+        letter-spacing: 0.5%;
+    }
+    .headline4{
+        font-size: 37px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 31.5px;
+    }
+    .body2-regular{
+        font-size: 18px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 27px;
+    }
+
     body{
         background-size: contain;
         background-size: 100vw 680px;
         background-color: white;
     }
+    
     .section-wrapper{
         padding-left: 350px;
     }
 /*HEADER*/
     header{
         height:86px;
+        display: flex;
     }
     .header-toggle span{
         display: none;
     }
     .header-menu{
-        position: relative;
+        display: none;
+    }
+    .header-menu-large{
         display: flex;
         flex-direction: row;
         color: white;
-        transform: translate(-150px);
         width: 100%;
-        height: 100%;
+        text-decoration: none;
         gap: 40px;
+        list-style: none;
+    }
+    .checkbox{
+        display: none;
+    }
+    .signup-btn{
+        height: 38px;
+        width: 123px;
+        background-color: var(--white);
+        color: black;
+        border-radius: 8px;
+        border: none;
+        outline: none;
     }
     .header-menu li:hover{
         border-bottom: solid 2px white;
     }
     
+    
 /*HEADER-TOGGLE*/
 /*PRESENTATION*/
-.presentation{
-    margin-left: 20px;
-    margin-top: 207px;
-    
-}
-.iphone-img{
-    position: fixed;
-    top: 5%;
-    left: 0%;
-    z-index: 2;
-}
-.business{
-    margin-top: 120px;
-    
-}
-/*----PROMOTION1----*/
-.promotion1{
-    background: white;
-}
-.promotion1-img{
-    width: 630px;
-}
-.iphone1-img{
-    display: none;
-}
-/*-------PROMOTION2-------*/
-.iphone2-img{
-    display: none;
-}
-/*----PROMOTION3----*/
-/*----PROMOTION4----*/
-/*-----COMMENTS------*/
-.comments{
-    position: relative;
-    z-index: 3;
-}
-/*-----FOOTER----*/
-footer{
-    position: relative;
-    z-index: 3;
-}
+    .presentation{
+        margin-left: 20px;
+        margin-top: 207px;
+        
+    }
+    .iphone-img{
+        position: fixed;
+        top: 5%;
+        left: 0%;
+        z-index: 2;
+    }
+    .business{
+        margin-top: 120px;
+        
+    }
+    /*----PROMOTION1----*/
+    .promotion1{
+        background: white;
+    }
+    .promotion1-img{
+        width: 630px;
+    }
+    .iphone1-img{
+        display: none;
+    }
+    /*-------PROMOTION2-------*/
+    .promotion2{
+        height: 768px;
+        padding-top: 207px;
+    }
+    .iphone2-img{
+        display: none;
+    }
+    /*----PROMOTION3----*/
+    .promotion3{
+        height: 768px;
+        padding-top: 207px;
+    }
+    /*----PROMOTION4----*/
+    .promotion4{
+        height: 768px;
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .promotion4 img{
+        margin:200px 525px 64px 200px;
+    }
+    /*-----COMMENTS------*/
+    .comments{
+        position: relative;
+        z-index: 3;
+    }
+    /*-----FOOTER----*/
+    .fast-sign-up{
+        margin: -300px 245px 94px 245px;;
+    }
+    footer{
+        position: relative;
+        z-index: 3;
+    }
 }
 
 @media screen and (min-width: 1200px){
