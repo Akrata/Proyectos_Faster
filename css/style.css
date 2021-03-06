@@ -208,6 +208,9 @@ header{
 .header-menu-large{
     display: none;
 }
+.signup-btn{
+    display: none;
+}
 
 /*PRESENTATION*/
 
@@ -247,6 +250,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 24px;
 }
 
@@ -331,6 +335,7 @@ text-align: left;
 .promotion4{
     padding: 64px 20px;
     background: white;
+    align-items: center;
     
 }
 .promotion4-text{
@@ -339,6 +344,7 @@ text-align: left;
     align-items: center;
     gap:24px;
     margin-bottom: 56px;
+    max-width: 446px;
     
 }
 .promotion4-text-top{
@@ -463,8 +469,9 @@ footer{
 
 }
 .footer-top{
-    display: grid;
-    grid-row-gap: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 .footer-top-icons{
     height: 60px;
@@ -562,6 +569,7 @@ footer{
         display: none;
     }
     .signup-btn{
+        display: block;
         height: 38px;
         width: 123px;
         background-color: var(--white);
@@ -577,9 +585,14 @@ footer{
     
 /*HEADER-TOGGLE*/
 /*PRESENTATION*/
+    .pre{
+        display: flex;
+        flex-direction: column;
+        gap: 90px;
+    }
     .presentation{
         margin-left: 20px;
-        margin-top: 207px;
+        margin-top: 120px;
         
     }
     .iphone-img{
@@ -606,6 +619,9 @@ footer{
     .promotion2{
         height: 768px;
         padding-top: 207px;
+        background-size: auto;
+        background-color: #E8E8E6;
+        background-position: right;
     }
     .iphone2-img{
         display: none;
@@ -639,15 +655,87 @@ footer{
         z-index: 3;
     }
 }
-
 @media screen and (min-width: 1200px){
+    .iphone-img{
+        width: 400px;
+        top: 10%;
+        left: -1%;
+        
+    }
+}
+
+
+@media screen and (min-width: 1366px){
+    html{
+        background-color: #55E2B8;
+        
+    }
+    body{
+        background-size: contain;
+        background-size: 100vw 900px;
+        max-width: 1366px;
+        margin: auto;
+    }
+    .section-wrapper{
+        padding-left: 470px;
+    }
 /*HEADER*/
 /*HEADER-TOGGLE*/
 /*PRESENTATION*/
+    .pre{
+        display: flex;
+        flex-direction: column;
+        gap: 250px;
+    }
+    .iphone-img{
+        width: 400px;
+        top: 10%;
+        left:3%;
+    }
+    .business{
+        margin-bottom: 128px;
+        
+    }
 /*----PROMOTION1----*/
+    
+    .promotion1-img{
+        width: 876px;
+        margin: 0px auto;
+    }
 /*-------PROMOTION2-------*/
+    .promotion2{
+        height: 775px;
+    }
 /*----PROMOTION3----*/
+    .promotion3{
+        height: 775px;
+    }
 /*----PROMOTION4----*/
+    .promotion4{
+        height: 1056px;     
+    }
+    .promotion4 img{
+        width: 371px;
+        display: block;
+        margin: auto;
+        
+    }
 /*-----COMMENTS------*/
 /*-----FOOTER----*/
+}
+@media screen and (min-width: 1500px){
+    .iphone-img{
+        width: 400px;
+        top: 10%;
+        left: 9%;
+        
+    }
+}
+@media screen and (min-width: 1700px){
+    .iphone-img{
+        width: 400px;
+        top: 10%;
+        left: 14%;
+        
+    }
 }
